@@ -1,0 +1,205 @@
+/* Configurações gerais */
+body { 
+    font-family: 'Georgia', serif;
+    background: url('imagens/floresta_escura.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centraliza o texto do corpo */
+}
+
+/* Camada escura sobre o fundo */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* Estilizando o header */
+header {
+    background: transparent;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Estilizando o nav */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #f5f5f5;
+}
+
+/* Centralizando textos e limitando largura */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #e63946;
+}
+
+main p {
+    line-height: 1.8;
+    max-width: 700px; /* Limita a largura máxima do texto */
+    margin: 0 auto 20px; /* Centraliza o texto */
+    text-align: justify; /* Justifica o texto */
+    font-size: 1.1em;
+}
+
+/* Estilo para as imagens principais */
+.capa-livro {
+    max-width: 40%;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Estilo para frases e citações */
+/* Estilo para a citação com o símbolo */
+/* Estilo para a citação com o símbolo */
+/* Estilo para a citação com o símbolo */
+.citacao {
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    margin: 0 auto; /* Centraliza horizontalmente o contêiner */
+    max-width: 600px; /* Limita a largura máxima */
+    padding: 10px; /* Adiciona espaço interno para estética */
+}
+
+/* Símbolo */
+.simbolo {
+    font-size: 2em;
+    color: #fff;
+    margin: 10px auto;
+}
+
+/* Frase */
+.frase {
+    font-size: 1.3em;
+    font-style: italic;
+    color: #fff;
+    line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+    text-align: center; /* Garante alinhamento central dentro da área limitada */
+    margin: 0 auto; /* Centraliza a frase no contêiner */
+}
+
+/* Autor */
+.autor {
+    display: block;
+    font-size: 1em;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+
+
+
+/* Estilizando o footer */
+footer {
+    background: transparent;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #f5f5f5;
+}
+
+/* Destaques na Home */
+section h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #e63946;
+}
+
+section div {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+}
+
+section div img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s;
+}
+
+section div img:hover {
+    transform: scale(1.1);
+}
+
+section div p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+#destaques {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.destaque {
+    text-align: center;
+    width: 30%;
+    margin: 10px 0;
+}
+
+.destaque img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.destaque img:hover {
+    transform: scale(1.05);
+}
+
+.destaque p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.destaque a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
